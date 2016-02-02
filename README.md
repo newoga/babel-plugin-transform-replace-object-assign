@@ -27,7 +27,7 @@ When you provide the plugin, also specify which package you would like imported 
 ```json
 {
   "plugins": [
-    ["transform-object-assign", "lodash.assign"]
+    ["transform-replace-object-assign", "lodash.assign"]
   ] 
 }
 ```
