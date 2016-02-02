@@ -1,6 +1,6 @@
 {
-  "name": "babel-plugin-transform-object-assign",
-  "version": "0.1.1",
+  "name": "babel-plugin-transform-replace-object-assign",
+  "version": "0.1.2",
   "description": "Allows you to provide custom implementation of Object.assin in babel builds",
   "repository": "github.com/newoga/babel-plugin-transform-object-assign",
   "author": "Neil Gabbadon",
