@@ -2,8 +2,11 @@
   "name": "babel-plugin-transform-replace-object-assign",
   "version": "0.2.0",
   "description": "Allows you to provide custom implementation of Object.assign in babel builds",
-  "repository": "github.com/newoga/babel-plugin-transform-object-assign",
-  "author": "Neil Gabbadon",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/newoga/babel-plugin-transform-replace-object-assign"
+  },
+  "author": "Neil Gabbadon <neil.gabbadon@gmail.com> (https://github.com/newoga)",
   "license": "MIT",
   "main": "lib/index.js",
   "scripts": {
