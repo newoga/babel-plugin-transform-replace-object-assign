@@ -1,3 +1,5 @@
+import { addDefault } from "@babel/helper-module-imports"
+
 const OBJECT_ASSIGN = 'ObjectAssign';
 
 export default function({types: t}) {
@@ -15,11 +17,11 @@ export default function({types: t}) {
 
           const { moduleSpecifier = 'object-assign' } = opts
 
-          const declare = t.importDeclaration([
-            t.importDefaultSpecifier(file.get(OBJECT_ASSIGN))
-          ], t.stringLiteral(moduleSpecifier));
-
-          path.node.body.unshift(declare);
+          addDefault(
+            file.path,
+            moduleSpecifier,
+            {nameHint: file.get(OBJECT_ASSIGN)}
+          )
         }
       },
 
