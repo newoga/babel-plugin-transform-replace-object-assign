@@ -1,3 +1,3 @@
-import assign from "simple-assign";
+import assign from 'simple-assign';
 
 export default Object.assign || assign;

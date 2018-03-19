@@ -23,12 +23,18 @@
     "babel",
     "babel-plugin"
   ],
+  "peerDependencies": {
+    "@babel/core": "^7.0.0-beta.42"
+  },
+  "dependencies": {
+    "@babel/helper-module-imports": "^7.0.0-beta.42"
+  },
   "devDependencies": {
-    "babel-cli": "^6.4.5",
-    "babel-core": "^6.4.5",
-    "babel-preset-es2015": "^6.3.13",
+    "@babel/cli": "^7.0.0-beta.42",
+    "@babel/core": "^7.0.0-beta.42",
+    "@babel/preset-es2015": "^7.0.0-beta.42",
+    "@babel/register": "^7.0.0-beta.42",
     "istanbul": "^0.4.2",
-    "mocha": "^2.4.5",
-    "simple-assign": "0.1.0"
+    "mocha": "^5.0.4"
   }
 }
