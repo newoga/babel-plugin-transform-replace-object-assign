@@ -9,13 +9,19 @@ export default function ({types: t}) {
         },
 
         exit(path, {file, opts}) {
-          if (!file.get(OBJECT_ASSIGN) && !path.scope.hasBinding(opts)) {
+          if (typeof opts === 'string') {
+            throw new Error(`Configuring module specifier with a string is no longer supported. Configure with { "moduleSpecifier": "${opts}" } instead of "${opts}".`);
+          }
+
+          const { moduleSpecifier = 'object-assign' } = opts;
+
+          if (!file.get(OBJECT_ASSIGN) && !path.scope.hasBinding(moduleSpecifier)) {
             return;
           }
 
           const declar = t.importDeclaration([
             t.importDefaultSpecifier(file.get(OBJECT_ASSIGN)),
-          ], t.stringLiteral(opts));
+          ], t.stringLiteral(moduleSpecifier));
 
           path.node.body.unshift(declar);
         }
