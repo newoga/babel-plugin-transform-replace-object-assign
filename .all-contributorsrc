@@ -36,6 +36,16 @@
       "contributions": [
         "ideas"
       ]
+    },
+    {
+      "login": "jaydenseric",
+      "name": "Jayden Seric",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/1754873?v=4",
+      "profile": "https://jaydenseric.com",
+      "contributions": [
+        "code",
+        "doc"
+      ]
     }
   ]
 }
