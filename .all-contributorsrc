@@ -18,6 +18,15 @@
         "code",
         "doc"
       ]
+    },
+    {
+      "login": "niksy",
+      "name": "Ivan Nikolić",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/389286?v=4",
+      "profile": "http://ivannikolic.com",
+      "contributions": [
+        "bug"
+      ]
     }
   ]
 }
