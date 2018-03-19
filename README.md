@@ -41,7 +41,7 @@ When you provide the plugin, use the `moduleSpecifier` option to specify which p
 ```json
 {
   "plugins": [
-    ["transform-replace-object-assign", { moduleSpecifier: "object-assign" }]
+    ["transform-replace-object-assign", { "moduleSpecifier": "object-assign" }]
   ]
 }
 ```
