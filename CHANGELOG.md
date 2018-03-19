@@ -2,6 +2,15 @@
 
 ## Unreleased changes
 
+* Via [#3](https://github.com/newoga/babel-plugin-transform-replace-object-assign/pull/3):
+  * Updated dependencies.
+  * New plugin implementation for Babel v7.
+  * Use [@babel/helper-module-imports](https://npm.im/@babel/helper-module-imports) so the output is either ESM or CJS depending if `sourceType` is `module` or `script`, fixing [#1](https://github.com/newoga/babel-plugin-transform-replace-object-assign/issues/1).
+  * Added [`@babel/core`](https://npm.im/@babel/core) peer dependency, as Babel does for official plugins.
+  * Disabled and ignored `package-lock.json`.
+  * Replaced `lodash.assign` in readme examples with `object-assign` to demo defaults.
+  * New way to register Babel for Mocha tests.
+
 ## 1.0.0
 
 * The plugin configuration is now optional. If no configuration is provided, the `Object.assign` implementation will be replaced with [object-assign](https://github.com/sindresorhus/object-assign).
