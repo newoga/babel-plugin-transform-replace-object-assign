@@ -1,0 +1,23 @@
+{
+  "projectName": "babel-plugin-transform-replace-object-assign",
+  "projectOwner": "newoga",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": true,
+  "contributors": [
+    {
+      "login": "newoga",
+      "name": "Neil Gabbadon",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/344018?v=4",
+      "profile": "https://github.com/newoga",
+      "contributions": [
+        "code",
+        "doc"
+      ]
+    }
+  ]
+}

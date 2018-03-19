@@ -1,6 +1,8 @@
 ## babel-plugin-transform-replace-object-assign
-
-[![Build Status](https://travis-ci.org/newoga/babel-plugin-transform-replace-object-assign.svg?branch=master)](https://travis-ci.org/newoga/babel-plugin-transform-replace-object-assign) [![npm version](https://img.shields.io/npm/v/babel-plugin-transform-replace-object-assign.svg?style=flat-square)](https://www.npmjs.com/package/babel-plugin-transform-replace-object-assign) [![npm downloads](https://img.shields.io/npm/dm/babel-plugin-transform-replace-object-assign.svg?style=flat-square)](https://www.npmjs.com/package/babel-plugin-transform-replace-object-assign)
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
+[![Build Status](https://travis-ci.org/newoga/babel-plugin-transform-replace-object-assign.svg?branch=master)](https://travis-ci.org/newoga/babel-plugin-transform-replace-object-assign)
+[![npm version](https://img.shields.io/npm/v/babel-plugin-transform-replace-object-assign.svg?style=flat-square)](https://www.npmjs.com/package/babel-plugin-transform-replace-object-assign)
+[![npm downloads](https://img.shields.io/npm/dm/babel-plugin-transform-replace-object-assign.svg?style=flat-square)](https://www.npmjs.com/package/babel-plugin-transform-replace-object-assign)
 
 Replaces `Object.assign` with a custom implementation that you provide in plugin configuration. This plugin works similarly to the [babel-plugin-transform-object-assign](https://www.npmjs.com/package/babel-plugin-transform-object-assign) plugin except it allows you to provide your own implementation that you would like to replace `Object.assign` with rather than the `_extends` helper that Babel uses.
 
@@ -69,3 +71,15 @@ import _objectAssign from 'object-assign';
 
 _objectAssign(a, b);
 ```
+
+## Contributors
+
+Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds/all-contributors#emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore -->
+| [<img src="https://avatars2.githubusercontent.com/u/344018?v=4" width="100px;"/><br /><sub><b>Neil Gabbadon</b></sub>](https://github.com/newoga)<br />[💻](https://github.com/newoga/babel-plugin-transform-replace-object-assign/commits?author=newoga "Code") [📖](https://github.com/newoga/babel-plugin-transform-replace-object-assign/commits?author=newoga "Documentation") |
+| :---: |
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification. Contributions of any kind welcome!
