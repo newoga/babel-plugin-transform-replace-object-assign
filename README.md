@@ -50,9 +50,7 @@ To use defaults (which is the same as above):
 
 ```json
 {
-  "plugins": [
-    "transform-replace-object-assign"
-  ]
+  "plugins": ["transform-replace-object-assign"]
 }
 ```
 

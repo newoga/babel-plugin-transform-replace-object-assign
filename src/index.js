@@ -1,40 +1,22 @@
-import { addDefault } from "@babel/helper-module-imports"
+import { addDefault } from '@babel/helper-module-imports'
 
-const OBJECT_ASSIGN = 'ObjectAssign';
-
-export default function({types: t}) {
+export default function({ types: t }) {
   return {
     visitor: {
-      Program: {
-        enter(path, {file}) {
-          file.set(OBJECT_ASSIGN, false);
-        },
-
-        exit(path, {file, opts}) {
-          if (!file.get(OBJECT_ASSIGN) && !path.scope.hasBinding(opts)) {
-            return;
-          }
-
+      CallExpression(path, { file, opts }) {
+        if (path.get('callee').matchesPattern('Object.assign')) {
           const { moduleSpecifier = 'object-assign' } = opts
 
-          addDefault(
-            file.path,
-            moduleSpecifier,
-            {nameHint: file.get(OBJECT_ASSIGN)}
-          )
-        }
-      },
+          if (this.importCache) path.node.callee = t.cloneNode(this.importCache)
+          else {
+            this.importCache = addDefault(file.path, moduleSpecifier, {
+              nameHint: 'objectAssign'
+            })
 
-      CallExpression(path, {file}) {
-        if (path.get('callee').matchesPattern('Object.assign')) {
-
-          if (!file.get(OBJECT_ASSIGN)) {
-            file.set(OBJECT_ASSIGN, path.scope.generateUidIdentifier('objectAssign'));
+            path.node.callee = this.importCache
           }
-
-          path.node.callee = file.get(OBJECT_ASSIGN);
         }
       }
     }
-  };
+  }
 }
