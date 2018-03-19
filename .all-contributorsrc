@@ -27,6 +27,15 @@
       "contributions": [
         "bug"
       ]
+    },
+    {
+      "login": "ljharb",
+      "name": "Jordan Harband",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/45469?v=4",
+      "profile": "https://twitter.com/ljharb",
+      "contributions": [
+        "ideas"
+      ]
     }
   ]
 }

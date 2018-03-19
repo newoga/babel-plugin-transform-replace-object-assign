@@ -1,5 +1,5 @@
 ## babel-plugin-transform-replace-object-assign
-[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors)
 [![Build Status](https://travis-ci.org/newoga/babel-plugin-transform-replace-object-assign.svg?branch=master)](https://travis-ci.org/newoga/babel-plugin-transform-replace-object-assign)
 [![npm version](https://img.shields.io/npm/v/babel-plugin-transform-replace-object-assign.svg?style=flat-square)](https://www.npmjs.com/package/babel-plugin-transform-replace-object-assign)
 [![npm downloads](https://img.shields.io/npm/dm/babel-plugin-transform-replace-object-assign.svg?style=flat-square)](https://www.npmjs.com/package/babel-plugin-transform-replace-object-assign)
@@ -78,8 +78,8 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore -->
-| [<img src="https://avatars2.githubusercontent.com/u/344018?v=4" width="100px;"/><br /><sub><b>Neil Gabbadon</b></sub>](https://github.com/newoga)<br />[💻](https://github.com/newoga/babel-plugin-transform-replace-object-assign/commits?author=newoga "Code") [📖](https://github.com/newoga/babel-plugin-transform-replace-object-assign/commits?author=newoga "Documentation") | [<img src="https://avatars3.githubusercontent.com/u/389286?v=4" width="100px;"/><br /><sub><b>Ivan Nikolić</b></sub>](http://ivannikolic.com)<br />[🐛](https://github.com/newoga/babel-plugin-transform-replace-object-assign/issues?q=author%3Aniksy "Bug reports") |
-| :---: | :---: |
+| [<img src="https://avatars2.githubusercontent.com/u/344018?v=4" width="100px;"/><br /><sub><b>Neil Gabbadon</b></sub>](https://github.com/newoga)<br />[💻](https://github.com/newoga/babel-plugin-transform-replace-object-assign/commits?author=newoga "Code") [📖](https://github.com/newoga/babel-plugin-transform-replace-object-assign/commits?author=newoga "Documentation") | [<img src="https://avatars3.githubusercontent.com/u/389286?v=4" width="100px;"/><br /><sub><b>Ivan Nikolić</b></sub>](http://ivannikolic.com)<br />[🐛](https://github.com/newoga/babel-plugin-transform-replace-object-assign/issues?q=author%3Aniksy "Bug reports") | [<img src="https://avatars1.githubusercontent.com/u/45469?v=4" width="100px;"/><br /><sub><b>Jordan Harband</b></sub>](https://twitter.com/ljharb)<br />[🤔](#ideas-ljharb "Ideas, Planning, & Feedback") |
+| :---: | :---: | :---: |
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification. Contributions of any kind welcome!
