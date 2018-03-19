@@ -59,13 +59,13 @@ To use defaults (which is the same as above):
 **In**
 
 ```js
-Object.assign(a, b)
+Object.assign(a, b);
 ```
 
 **Out**
 
 ```js
-import _objectAssign from 'object-assign'
+import _objectAssign from 'object-assign';
 
-_objectAssign(a, b)
+_objectAssign(a, b);
 ```

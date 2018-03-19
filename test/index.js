@@ -1,27 +1,27 @@
-import path from 'path'
-import fs from 'fs'
-import assert from 'assert'
-import { transformFileSync } from '@babel/core'
-import plugin from '../src/index'
+import path from 'path';
+import fs from 'fs';
+import assert from 'assert';
+import { transformFileSync } from '@babel/core';
+import plugin from '../src/index';
 
 function trim(str) {
-  return str.replace(/^\s+|\s+$/, '')
+  return str.replace(/^\s+|\s+$/, '');
 }
 
 describe('The replace-object-assign plugin', () => {
-  const fixturesDir = path.join(__dirname, 'fixtures')
+  const fixturesDir = path.join(__dirname, 'fixtures');
   fs.readdirSync(fixturesDir).map(caseName => {
     it(`should ${caseName.split('-').join(' ')}`, () => {
-      const fixtureDir = path.join(fixturesDir, caseName)
+      const fixtureDir = path.join(fixturesDir, caseName);
       const actual = transformFileSync(path.join(fixtureDir, 'actual.js'), {
         plugins: [[plugin, { moduleSpecifier: 'simple-assign' }]]
-      }).code
+      }).code;
 
       const expected = fs
         .readFileSync(path.join(fixtureDir, 'expected.js'))
-        .toString()
+        .toString();
 
-      assert.equal(trim(actual), trim(expected))
-    })
-  })
-})
+      assert.equal(trim(actual), trim(expected));
+    });
+  });
+});

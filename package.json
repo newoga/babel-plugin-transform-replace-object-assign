@@ -1,15 +1,12 @@
 {
   "name": "babel-plugin-transform-replace-object-assign",
   "version": "0.2.0",
-  "description":
-    "Allows you to provide custom implementation of Object.assign in babel builds",
+  "description": "Allows you to provide custom implementation of Object.assign in babel builds",
   "repository": {
     "type": "git",
-    "url":
-      "https://github.com/newoga/babel-plugin-transform-replace-object-assign"
+    "url": "https://github.com/newoga/babel-plugin-transform-replace-object-assign"
   },
-  "author":
-    "Neil Gabbadon <neil.gabbadon@gmail.com> (https://github.com/newoga)",
+  "author": "Neil Gabbadon <neil.gabbadon@gmail.com> (https://github.com/newoga)",
   "license": "MIT",
   "main": "lib/index.js",
   "scripts": {
@@ -18,7 +15,11 @@
     "build": "babel src --out-dir lib",
     "prepublish": "npm run build"
   },
-  "keywords": ["assign", "babel", "babel-plugin"],
+  "keywords": [
+    "assign",
+    "babel",
+    "babel-plugin"
+  ],
   "dependencies": {
     "@babel/helper-module-imports": "^7.0.0-beta.42"
   },
@@ -28,12 +29,6 @@
     "@babel/preset-es2015": "^7.0.0-beta.42",
     "@babel/register": "^7.0.0-beta.42",
     "istanbul": "^0.4.2",
-    "mocha": "^5.0.4",
-    "prettier": "^1.11.1"
-  },
-  "prettier": {
-    "proseWrap": "never",
-    "singleQuote": true,
-    "semi": false
+    "mocha": "^5.0.4"
   }
 }
