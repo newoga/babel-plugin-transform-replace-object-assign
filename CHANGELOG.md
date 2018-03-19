@@ -2,6 +2,8 @@
 
 ## Unreleased changes
 
+## 2.0.0-beta.0
+
 * Via [#3](https://github.com/newoga/babel-plugin-transform-replace-object-assign/pull/3):
   * Updated dependencies.
   * New plugin implementation for Babel v7.
