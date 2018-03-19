@@ -1,0 +1,23 @@
+#!/usr/bin/env node
+
+// Takes the '## Unreleased change' header CHANGELOG.md and replaces it with the current version
+
+const fs = require('fs');
+const path = require('path');
+const packageJson = require('./package.json');
+
+const changelog = path.join(__dirname, 'CHANGELOG.md');
+
+fs.readFile(changelog, 'utf8', (err, data) => {
+  if (err) {
+    throw new Error(`Unable to read CHANGELOG.md: ${err.message}`);
+  }
+
+  const result = data.replace(/^# Changelog[\n]*## Unreleased changes/g, '$&\n\n## ' + packageJson.version);
+
+  fs.writeFile(changelog, result, 'utf8', (err) => {
+     if (err) {
+       throw new Error(`Unable to write CHANGELOG.md: ${err.message}`);
+     }
+  });
+});
