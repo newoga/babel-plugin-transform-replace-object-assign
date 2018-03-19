@@ -5,14 +5,10 @@ export default function({ types: t }) {
     visitor: {
       CallExpression(path, { file, opts }) {
         if (path.get('callee').matchesPattern('Object.assign')) {
-          const { moduleSpecifier = 'object-assign' } = opts
-
           if (this.importCache) path.node.callee = t.cloneNode(this.importCache)
           else {
-            this.importCache = addDefault(file.path, moduleSpecifier, {
-              nameHint: 'objectAssign'
-            })
-
+            const { moduleSpecifier = 'object-assign' } = opts
+            this.importCache = addDefault(file.path, moduleSpecifier)
             path.node.callee = this.importCache
           }
         }
