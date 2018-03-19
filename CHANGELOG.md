@@ -31,7 +31,7 @@
     "plugins": [
       [
         "transform-replace-object-assign",
-        { "moduleSpecifier": "custom-module}" }
+        { "moduleSpecifier": "custom-module" }
       ]
     ]
   }
