@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-transform-replace-object-assign",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "description": "Allows you to provide custom implementation of Object.assign in babel builds",
   "repository": {
     "type": "git",
@@ -10,10 +10,13 @@
   "license": "MIT",
   "main": "lib/index.js",
   "scripts": {
-    "test": "istanbul test _mocha",
-    "prebuild": "rm -rf lib/",
     "build": "babel src --out-dir lib",
-    "prepublish": "npm run build"
+    "bump-changelog": "./bump-changelog",
+    "postversion": "git push && git push --tags",
+    "prebuild": "npm test && rm -rf lib/",
+    "prepublish": "npm run build",
+    "test": "istanbul test _mocha",
+    "version": "npm run build && npm run bump-changelog && git add -A lib CHANGELOG.md"
   },
   "keywords": [
     "assign",
