@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-transform-replace-object-assign",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "description": "Allows you to provide custom implementation of Object.assign in babel builds",
   "repository": {
     "type": "git",

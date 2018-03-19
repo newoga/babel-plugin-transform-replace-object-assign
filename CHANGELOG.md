@@ -2,6 +2,8 @@
 
 ## Unreleased changes
 
+## 1.0.0
+
 * The plugin configuration is now optional. If no configuration is provided, the `Object.assign` implementation will be replaced with [object-assign](https://github.com/sindresorhus/object-assign).
 
   **This will replace `Object.assign` with `object-assign`:**
