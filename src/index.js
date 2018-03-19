@@ -1,6 +1,6 @@
 const OBJECT_ASSIGN = 'ObjectAssign';
 
-export default function ({types: t}) {
+export default function({types: t}) {
   return {
     visitor: {
       Program: {
@@ -13,11 +13,13 @@ export default function ({types: t}) {
             return;
           }
 
-          const declar = t.importDeclaration([
-            t.importDefaultSpecifier(file.get(OBJECT_ASSIGN)),
-          ], t.stringLiteral(opts));
+          const { moduleSpecifier = 'object-assign' } = opts
 
-          path.node.body.unshift(declar);
+          const declare = t.importDeclaration([
+            t.importDefaultSpecifier(file.get(OBJECT_ASSIGN))
+          ], t.stringLiteral(moduleSpecifier));
+
+          path.node.body.unshift(declare);
         }
       },
 

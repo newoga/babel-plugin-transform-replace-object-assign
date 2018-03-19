@@ -1,7 +1,7 @@
 import path from 'path';
 import fs from 'fs';
 import assert from 'assert';
-import {transformFileSync} from 'babel-core';
+import {transformFileSync} from '@babel/core';
 import plugin from '../src/index';
 
 function trim(str) {
@@ -15,7 +15,7 @@ describe('The replace-object-assign plugin', () => {
       const fixtureDir = path.join(fixturesDir, caseName);
       const actual = transformFileSync(path.join(fixtureDir, 'actual.js'), {
         plugins: [
-          [plugin, 'simple-assign']
+          [plugin, {moduleSpecifier: 'simple-assign'}]
         ]
       }).code;
       const expected = fs.readFileSync(path.join(fixtureDir, 'expected.js')).toString();
