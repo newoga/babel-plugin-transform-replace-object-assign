@@ -13,9 +13,13 @@ describe('The replace-object-assign plugin', () => {
   fs.readdirSync(fixturesDir).map((caseName) => {
     it(`should ${caseName.split('-').join(' ')}`, () => {
       const fixtureDir = path.join(fixturesDir, caseName);
+      const pluginConfig = [plugin];
+      if (caseName !== 'use-default-config') {
+        pluginConfig.push({ moduleSpecifier: 'simple-assign' });
+      }
       const actual = transformFileSync(path.join(fixtureDir, 'actual.js'), {
         plugins: [
-          [plugin, 'simple-assign']
+          pluginConfig
         ]
       }).code;
       const expected = fs.readFileSync(path.join(fixtureDir, 'expected.js')).toString();

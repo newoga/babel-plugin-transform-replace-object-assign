@@ -26,7 +26,7 @@ The bug in Chrome has been fixed for quite some time now (it was fixed in Chrome
 
 ```sh
 # Install the plugin
-$ npm install babel-plugin-transform-replace-object-assign
+$ npm install --save-dev babel-plugin-transform-replace-object-assign
 
 # Install an assign implementation
 $ npm install lodash.assign
@@ -41,8 +41,8 @@ When you provide the plugin, also specify which package you would like imported 
 ```json
 {
   "plugins": [
-    ["transform-replace-object-assign", "lodash.assign"]
-  ] 
+    ["transform-replace-object-assign", { "moduleSpecifier": "lodash.assign" }]
+  ]
 }
 ```
 
