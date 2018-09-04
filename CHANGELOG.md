@@ -2,6 +2,11 @@
 
 ## Unreleased changes
 
+* Chores (via #8):
+  * Replaced deprecated `@babel/preset-es2015` with `@babel/preset-env`
+  * Updated babel related dependencies to stable Babel v7 release
+  * Updated other development dependencies (`mocha`, `all-contributors-cli`)
+
 ## 2.0.0-beta.0
 
 * Via [#3](https://github.com/newoga/babel-plugin-transform-replace-object-assign/pull/3):
