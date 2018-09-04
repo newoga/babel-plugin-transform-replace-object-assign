@@ -2,6 +2,8 @@
 
 ## Unreleased changes
 
+## 2.0.0
+
 * Official support for stable babel v7! :tada:
 
 * Chores (via #8):
