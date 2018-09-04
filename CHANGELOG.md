@@ -2,6 +2,10 @@
 
 ## Unreleased changes
 
+## 2.0.0
+
+* Official support for stable babel v7! :tada:
+
 * Chores (via #8):
   * Replaced deprecated `@babel/preset-es2015` with `@babel/preset-env`
   * Updated babel related dependencies to stable Babel v7 release
